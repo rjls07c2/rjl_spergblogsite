@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: "Epilogue", sans-serif;
+
+    background-color: black;
+    color: lightgrey;
+
+    a:link, a:visited, a:hover, a:active {
+        color: $SpergGreenBright;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
+.app {
+    margin: 2rem 1rem;
+
+    .appHead {
+        text-align: center;
+
+        .internalWrapper p {
+            text-align: left
+        }
+    }
+
+    .errorPage {
+        color: $SpergOrangeBright;
+        text-align: center;
+
+        .errorReturn {
+            color: $SpergOrangeBright;
+            border-bottom: 2px solid $SpergOrangeBright;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.blogHolderWrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+
+    h3 {
+        margin: 10px;
+    }
+
+    .blogPostFilterButtons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        .blogPostFilterButton {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    .blogPostsWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+        .blogPostWrapper {
+            position: relative;
+            padding: 4px;
+            p {
+                font-size: 0.8em;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.blogDisplay {
+    pre {
+        font-family: "Epilogue", sans-serif;
+        font-size: 1rem;
+        text-align: left;
+    }
+}

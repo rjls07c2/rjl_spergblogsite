@@ -1,0 +1,40 @@
+.naviBar {
+    display: flex;
+    justify-content: space-between;
+
+    text-transform: uppercase;
+
+    .naviBarLeft{
+        display: flex;
+    }
+
+    .naviLink {
+        margin: 0px 4px;
+        border-bottom: 2px solid transparent;
+        transition: 0.38s ease-in-out;
+
+        &:hover {
+            border-bottom: 2px solid $SpergGreenBright;
+        }
+    }
+
+    .naviActive {
+        margin: 0px 4px;
+        border-bottom: 2px solid $SpergGreenBright;
+    }
+    
+    .naviBarRight {
+        display: flex;
+        flex-direction: row;
+
+        p {
+            margin: 0px;
+            padding-right: 3px;
+            text-transform: none;
+        }
+    }
+    
+    // .naviLink.active {
+    //     border-bottom: 2px solid $SpergGreenBright;
+    // }
+}

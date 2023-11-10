@@ -1,0 +1,17 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    
+    .form-group {
+        padding: 5px 0px;
+    }
+}
+
+input {
+    height: 1em;
+}
+
+textarea {
+    height: 200px;
+    outline: none;
+}

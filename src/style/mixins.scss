@@ -1,0 +1,42 @@
+@mixin baseBtn {
+    cursor: pointer;
+    height: 22px;
+    font-size: 1em;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: all 0.38s ease-in-out;
+
+    background-color: $SpergAzureBright;
+    color: lightgray;
+
+    &:active, &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: $SpergAzure;
+    }
+}
+
+@mixin inputElement {
+    input, textarea {
+        font-family: "Epilogue", sans-serif;
+        color: $SpergAzureBright;
+        font-size: 1.0rem;
+        background-color: transparent;
+
+        padding: 5px 0px;
+        width: 100%;
+        border-top: 0px;
+        border-right: 0px;
+        border-bottom: 1px solid $SpergAzureBright;
+        border-left: 0px;
+        transition: 0.5s all ease-in-out;
+
+        &:focus {
+            outline: none;
+            border-bottom: 1px solid $SpergAzure;
+        }
+    }
+}

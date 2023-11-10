@@ -1,0 +1,26 @@
+@media (max-width: 615px) {
+    .naviBar {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+
+        .naviBarLeft {
+            flex-direction: column;
+            order: 2;
+            width: 100px;
+        }
+
+        .naviBarRight {
+            flex-direction: column;
+        }
+    }
+
+    .blogManagerWrapper {
+        display: flex;
+        flex-direction: column;
+
+        .leftColumn {
+            margin-bottom: 8px;
+        }
+    }
+}

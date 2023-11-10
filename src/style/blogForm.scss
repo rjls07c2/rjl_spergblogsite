@@ -1,0 +1,21 @@
+.blogFormLeft {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+   
+    h1 {
+        margin: 0;
+        padding: 8px;
+    }
+
+    .blogFormInner {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 7fr 1fr;
+        
+        @include inputElement();
+
+        .blogFormItem {
+            padding: 4px 0;
+            margin: 0;
+        }
+    }
+}

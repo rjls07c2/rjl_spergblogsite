@@ -1,0 +1,74 @@
+.blogManagerWrapper {
+    margin-top: 4px;
+
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+    .leftColumn {
+        margin-right: 4px;
+    }
+
+    .rightColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .blogSideWrapper {
+            border: 1px solid $SpergAzureBright;
+            border-radius: 1px;
+            margin: 1px 0px;
+
+            display: flex;
+            flex-direction: column;
+
+            &:hover {
+                border: 1px solid $SpergAzure;
+            }
+
+            h3 {
+                color: $SpergGreenBright;
+                margin: 0;
+                padding: 2px;
+            }
+
+            p {
+                font-size: 0.8rem;
+                margin: 0;
+                padding: 2px;
+            }
+
+            .editButton {
+                padding: 2px;
+
+                button {
+                    background-color: $SpergGreenBright;
+
+                    &:active, &:focus {
+                        outline: none;
+                    }
+                
+                    &:hover {
+                        background-color: $SpergGreen;
+                    }
+                }
+            }
+
+            .deleteButton {
+                padding: 2px;
+
+                button {
+                    background-color: $SpergOrangeDark;
+
+                    &:active, &:focus {
+                        outline: none;
+                    }
+                
+                    &:hover {
+                        background-color: $SpergOrangeDeep;
+                    }
+                }
+            }
+        }
+    }
+}
