@@ -1,6 +1,3 @@
-import logo from './logo.svg';
-// import './App.css';
-
 import Navi from "./navigation/navi";
 import Switcher from './navigation/switcher';
 
