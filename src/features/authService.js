@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = "http://localhost:4200/api/users/";
+const API_URL = "https://rjl-spergblogbackend-08fe3b62e5a0.herokuapp.com/api/users/";
 
 // Register user
 const register = async (userData) => {

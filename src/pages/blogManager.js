@@ -38,7 +38,7 @@ class BlogManager extends Component {
         const config = {
             headers: {Authorization: `Bearer ${JSON.parse(localStorage.getItem("user")).token}`}
         }
-        axios.delete(`http://localhost:4200/api/posts/${blogPost._id}`, config)
+        axios.delete(`https://rjl-spergblogbackend-08fe3b62e5a0.herokuapp.com/api/posts/${blogPost._id}`, config)
         .then(response => {
             this.setState({
                 blogPosts: this.state.blogPosts.filter(item => {
@@ -59,7 +59,7 @@ class BlogManager extends Component {
     }
 
     getBlogPosts() {
-        axios.get('http://localhost:4200/api/posts')
+        axios.get('https://rjl-spergblogbackend-08fe3b62e5a0.herokuapp.com/api/posts')
         .then(response => {
           console.log("response from getBlogPosts", response);
           this.setState({

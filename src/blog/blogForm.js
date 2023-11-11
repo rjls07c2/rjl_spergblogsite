@@ -12,7 +12,7 @@ export default class BlogForm extends Component {
             cats: "",
             text: "",
             editMode: false,
-            apiUrl: "http://localhost:4200/api/posts/",
+            apiUrl: "https://rjl-spergblogbackend-08fe3b62e5a0.herokuapp.com/api/posts/",
             apiAction: 'post'
         };
 
@@ -31,7 +31,7 @@ export default class BlogForm extends Component {
                 cats: cats || "",
                 text: text || "",
                 editMode: true,
-                apiUrl: `http://localhost:4200/api/posts/${_id}`,
+                apiUrl: `https://rjl-spergblogbackend-08fe3b62e5a0.herokuapp.com/api/posts/${_id}`,
                 apiAction: 'put'
             });
         }
@@ -72,7 +72,7 @@ export default class BlogForm extends Component {
             cats: "",
             text: "",
             editMode: false,
-            apiUrl: "http://localhost:4200/api/posts/",
+            apiUrl: "https://rjl-spergblogbackend-08fe3b62e5a0.herokuapp.com/api/posts/",
             apiAction: 'post'
         })
 

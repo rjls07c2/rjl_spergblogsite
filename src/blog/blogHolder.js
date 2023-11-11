@@ -16,7 +16,7 @@ class BlogHolder extends Component {
     }
 
     getBlogPosts() {
-        axios.get('http://localhost:4200/api/posts')
+        axios.get('https://rjl-spergblogbackend-08fe3b62e5a0.herokuapp.com/api/posts')
         .then(response => {
           this.setState({
             data: response.data

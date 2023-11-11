@@ -41,7 +41,7 @@ import axios from 'axios';
 
     const getPost = async () => {
         let thePost = await
-        axios.get(`http://localhost:4200/api/posts/${_id}`)
+        axios.get(`https://rjl-spergblogbackend-08fe3b62e5a0.herokuapp.com/api/posts/${_id}`)
         .then(response => {
             console.log('get response: ', response)
             setData(response.data);
