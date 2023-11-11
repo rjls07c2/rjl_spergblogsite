@@ -6,7 +6,6 @@ import Home from "../pages/home";
 import About from "../pages/about";
 import Contact from "../pages/contact";
 import BlogManager from "../pages/blogManager";
-import BlogAdder from "../pages/blogAdder";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import BlogPost from "../blog/blogPost";
@@ -29,7 +28,6 @@ function Switcher() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               {user?.admin ? adminOnly() : null}
-              <Route path="/BlogAdder" element={<BlogAdder />} />
               <Route path="/login" element={<Login />} />
               <Route path="/Register" element={<Register />} />
               <Route path="/blog/:_id" element={<BlogPost />} />

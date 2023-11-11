@@ -17,13 +17,12 @@ function Login() {
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
-    const {user, isLoading, isError, isSuccess, message} = useSelector(
+    const {user, isError, isSuccess, message} = useSelector(
         (state) => state.auth
     )
 
 
     const onSubmit = (e) => {
-        // console.log('submitted')
         e.preventDefault()
 
         const userData = {
@@ -36,7 +35,6 @@ function Login() {
     };
 
     useEffect(() => {
-        // console.log('useEffect fire', isSuccess, user)
         if(isError) {
             toast.error(message)
         };
@@ -57,11 +55,6 @@ function Login() {
     };
 
    
-
-    // if(isLoading) {
-    //     return <Spinner />
-    // }
-
     return (
         <div>
             <section className='heading'>
