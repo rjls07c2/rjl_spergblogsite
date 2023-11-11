@@ -37,7 +37,6 @@ class BlogHolder extends Component {
 
     blogPosts() {
         return this.state.data.map(post => {
-            // console.log("post data: ", post);
             return (
                 <BlogParse
                     key={post._id} 
@@ -60,17 +59,6 @@ class BlogHolder extends Component {
             <div className="blogHolderWrapper">
                 <h3>Category Selectors</h3>
                 <div className="blogPostFilterButtons">
-                    {/* <div className="blogPostFilterButton">
-                        <button className="btn" onClick={() => this.handleFilter("test")}>
-                            Test
-                        </button>
-                    </div>
-
-                    <div className="blogPostFilterButton">
-                        <button className="btn" onClick={() => this.handleFilter("testing")}>
-                            Testing
-                        </button>
-                    </div> */}
                     <div className="blogPostFilterButton">
                         <button className="btn" onClick={() => this.handleFilter("edu")}>
                             Education
